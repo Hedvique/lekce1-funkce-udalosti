@@ -1,6 +1,8 @@
 // tady je místo pro náš program
 
-document.querySelector("#vysledek").innerHTML = secti(4, 5);
+function result() {
+  document.querySelector("#vysledek").innerHTML = secti(4, 5)
+}
 
 /**
  * Sečte dvě čísla na vstupu a vrátí výsledek
@@ -16,6 +18,15 @@ function secti(a, b) {
 /**
  * Upozorní uživatele při spuštění.
  */
+ let square = document.querySelector(".ctverecek");
+
 function upozorni() {
   alert("Gratulace, právě jsi spustila tuto funkci!");
+  console.log("Gratulace, právě jsi spustila tuto funkci!")
+  square.textContent = 'Gratulace, právě jsi spustila tuto funkci!'
 }
+
+function green() {
+  square.style.backgroundColor = 'green';
+}
+
